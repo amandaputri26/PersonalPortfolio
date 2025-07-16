@@ -1,0 +1,137 @@
+#work {
+  background: #e5e5e5;
+  padding: 100px 20px;
+}
+
+.work-title {
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 40px;
+  color: white;
+  background: linear-gradient(90deg, #1A315C, #294881);
+  display: inline-block;
+  padding: 20px 100px;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.work-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.work-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.work-image {
+  width: 100%;
+  display: block;
+}
+
+.work-role {
+  background: linear-gradient(90deg, #1A535C, #246670);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.work-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color:  #1A535C;
+  padding: 5px 20px;
+  text-align: left;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.cssanimation {
+  opacity: 0;
+}
+
+.cssanimation.animate {
+  animation-name: clipVerticalSplitIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes clipVerticalSplitIn {
+  0% {
+    clip-path: inset(0 50% 0 50%);
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  #work {
+    padding: 60px 15px;
+  }
+
+  .work-title {
+    font-size: 28px;
+    padding: 15px 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .work-card {
+    flex: 0 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    height: 350px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+
+  .work-card:nth-child(3) {
+    flex: 0 0 calc(50% - 20px); 
+    margin-left: calc(0% + 20px);
+  }
+
+  .work-role {
+    font-size: 7px;
+    padding: 4px 6px;
+  }
+
+  .work-description {
+    font-size: 6.4px;
+    padding: 5px 6px;
+  }
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanda's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="assets/welcome.css" />
+  <link rel="stylesheet" href="assets/about.css" />
+  <link rel="stylesheet" href="assets/skills.css" />
+  <link rel="stylesheet" href="assets/work.css" />
+  <link rel="stylesheet" href="assets/project.css" />
+  <link rel="stylesheet" href="assets/footer.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="nav-left">Amanda's Portfolio</div>
+      <nav class="nav-right">
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="background-container">
+      <canvas id="backgroundCanvas"></canvas>
+    </div>
+    <div class="hero-container">
+      <div class="spline-container">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.26/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/PNrWTGKk1iR54z77/scene.splinecode"></spline-viewer>
+      </div>
+      <div class="intro-text">
+        <h2><span id="hello"></span></h2>
+        <h1 class="name-text"><span id="name"></span></h1>
+        <p class="description-text"><span id="desc"></span></p>
+        <div class="button-group" id="buttonGroup" style="opacity: 0;">
+          <a href="assets/CV Amanda Putri .pdf" download class="btn primary-btn" id="downloadBtn">
+            Download CV
+          </a>
+          <a href="mailto:amandaaapuuutriii@gmail.com" class="btn icon-only" title="Email Me" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+          </a>
+          <a href="https://www.linkedin.com/in/amanda-putri-9a226528b/" class="btn icon-only" title="LinkedIn"
+            target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/amandaputri26" class="btn icon-only" title="GitHub" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="about-grid"></div>
+    <div class="about-wrapper">
+      <div class="about-desc">
+        <div class="about-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-text">
+          <p>
+            Hi again, I'm Amanda Putri, an Informatics student from President University, currently specializing in IoT,
+            which basically means I make objects talk to each other and occasionally break them in the process
+            (for learning purposes, I promise). Aside from IoT, I’m also really passionate about design, UI/UX and
+            front-end development. I like creating things that not only work well but also look clean and feel
+            intuitive to use.
+          </p>
+          <p>
+            I’m actively involved in some campus events, usually helping with the creative or technical side.
+            I enjoy being part of a team and contributing to something meaningful (or at least functional). My dream?
+            To work in the creative tech world, where I can mix logic, design, and possibly cry over broken prototypes
+            in peace.
+          </p>
+        </div>
+        <img src="assets/images/myself.png" alt="Amanda Putri" class="about-image" />
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="skills-wrapper">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front panel">
+            <div class="panel-title dev">Development</div>
+            <div class="card-grid dev-grid">
+              <div class="card-box"><i class="devicon-html5-plain"></i></div>
+              <div class="card-box"><i class="devicon-css3-plain"></i></div>
+              <div class="card-box"><i class="devicon-javascript-plain"></i></div>
+              <div class="card-box"><i class="devicon-java-plain"></i></div>
+              <div class="card-box"><i class="devicon-mysql-plain"></i></div>
+              <div class="card-box"><i class="devicon-arduino-plain"></i></div>
+              <div class="card-box"><i class="devicon-python-plain"></i></div>
+              <div class="card-box"><i class="devicon-cplusplus-plain"></i></div>
+              <div class="card-box"><i class="devicon-php-plain"></i></div>
+            </div>
+            <button class="arrow-button dev" id="flipToTools">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <path fill="#FFFFFF" d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
+              </svg>
+            </button>
+          </div>
+          <div class="flip-card-back panel">
+            <div class="panel-title tools">Tools</div>
+            <div class="card-grid tools-grid">
+              <div class="card-box"><i class="devicon-vscode-plain"></i></div>
+              <div class="card-box"><i class="devicon-git-plain"></i></div>
+              <div class="card-box"><i class="devicon-github-original"></i></div>
+              <div class="card-box"><i class="devicon-docker-plain"></i></div>
+              <div class="card-box"><i class="devicon-firebase-plain"></i></div>
+              <div class="card-box"><img src="https://cdn.simpleicons.org/mqtt/FFFFFF" alt="MQTT"></div>
+              <div class="card-box"><img src="https://cdn.simpleicons.org/googlecolab/FFFFFF" alt="Colab"></div>
+              <div class="card-box"><i class="devicon-figma-plain"></i></div>
+              <div class="card-box"><i class="devicon-blender-original"></i></div>
+              <div class="card-box"><i class="devicon-canva-original"></i></div>
+            </div>
+            <button class="arrow-button tools" id="flipToDev">
+              <svg viewBox="0 0 24 24" width="24" height="24" style="transform: rotate(180deg);">
+                <path fill="#FFFFFF" d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="work-wrapper">
+      <div class="work-title-container cssanimation ca__fx-clipVerticalSplitIn">
+        <h2 class="work-title">Work Experience</h2>
+      </div>
+      <div class="work-cards">
+        <div class="work-card">
+          <img src="assets/images/brin.png" alt="BRIN Intern" class="work-image" />
+          <div class="work-role">Research Intern <br> (April - May 2025) <br> Badan Riset dan Inovasi Nasional</div>
+          <p class="work-description">
+            For my bootcamp semester project, I joined Badan Riset dan Inovasi Nasional (BRIN) as a Research Intern,
+            assigned to the AMCS (Automatic Monitoring Control System) in the fisheries sector. My main task was
+            developing a water monitoring system using ESP32-CAM to detect color changes in biofloc water. I implemented
+            RTC-based timestamping for accurate data logging and time tracking. This project strengthened my knowledge
+            of
+            embedded systems and their real-world applications in environmental monitoring.
+          </p>
+        </div>
+        <div class="work-card">
+          <img src="assets/images/setsail1.png" alt="SetSail Intern" class="work-image" />
+          <div class="work-role">Web Developer Intern <br> (January -May 2024) <br> SetSail BizAccel</div>
+          <p class="work-description">
+            As a Website Developer Intern at SetSail BizAccel, I helped design and build websites for student business
+            tenants to improve their online presence. I worked closely with the creative team to support UX, branding,
+            and content coordination efforts. My responsibilities included front-end development tailored to each
+            business. I also participated in several entrepreneurship and innovation events hosted by
+            SetSail, contributing as a committee member. This experience improved my technical skills and gave me
+            hands-on exposure to working in a creative and fast-paced environment.
+          </p>
+        </div>
+
+        <div class="work-card">
+          <img src="assets/images/setsail2.png" alt="SetSail PIC" class="work-image" />
+          <div class="work-role">PIC of Web Developer <br> (September 2024 - May 2025) <br> SetSail BizAccel</div>
+          <p class="work-description">
+            After my internship, I was appointed as the PIC (Person in Charge) of Website Development. I mentored new
+            interns, helped manage website development pipelines, and ensured that project goals were met efficiently. I
+            also reviewed their code for quality, consistency, and UI/UX effectiveness. In addition to the technical
+            side, I continued to help organize SetSail’s entrepreneurship events by assisting with planning and
+            on-the-ground coordination. This role allowed me to grow in both leadership and project management.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="projects-title-container cssanimation ca__fx-clipVerticalSplitIn">
+      <h2 class="projects-title">Projects</h2>
+    </div>
+    <div class="projects-wrapper">
+      <div class="project-card">
+        <img src="assets/images/CashTracker.png" alt="Project 1" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">CashTrack: Expenses Tracker</h3>
+          <p class="project-description">CashTracker is a budgeting web app developed with Flask (Python) and React.js,
+            featuring MySQL for data storage and Docker for containerization. It enables users to register/login, track
+            income/expenses with WIB timestamps, categorize transactions, and view monthly summaries. Designed for
+            simplicity, it helps students manage finances efficiently while demonstrating distributed system principles.
+          </p>
+          <a href="https://github.com/amandaputri26/CashTracker" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/AIHeartRate.png" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Heart Rate Risk Detection System Using Naive Bayes</h3>
+          <p class="project-description">A GUI app that classifies heart rate (bpm) as low/normal/high using Naive Bayes
+            probability. Calculates risk of abnormality and displays medical advice. Input your BPM, and it outputs
+            probabilities + warnings for bradycardia/tachycardia. Built with Tkinter.</p>
+          <a href="https://github.com/amandaputri26/Heart-Rate-Risk-Detection-System-Using-Naive-Bayes" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/EnrollmentApps.png" alt="Project 3" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Android Studio Enrollment Apps</h3>
+          <p class="project-description">This Android Studio enrollment app, built with Java and Firebase, allows
+            students to register/login via Firebase Auth, select subjects from a checklist while enforcing a credit
+            limit, and view their enrolled courses in a RecyclerView, with real-time validation to prevent
+            over-enrollment and Firebase Realtime Database storing all student-course data securely.</p>
+          <a href="https://github.com/amandaputri26/enrollmentapp" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/ESP32CAMBioflok.png" alt="Project 4" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">ESP-32 CAM for Biofloc Water Identification</h3>
+          <p class="project-description">This IoT project uses an ESP32-CAM to analyze water quality in biofloc systems
+            by capturing RGB images, calculating color averages (R/G/B) and the Modified Chlorophyll Color Index (MCCI),
+            then transmitting data via MQTT (to cloud) and ESP-NOW (peer-to-peer), while storing timestamped images on
+            an SD card with automatic file management.</p>
+          <a href="https://github.com/amandaputri26/esp32-camBioflok" target="_blank" class="project-button">View on
+            GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/ESP8266Car.png" alt="Project 5" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">ESP8266 WiFi Web-Controlled Robot Car</h3>
+          <p class="project-description">Controls a car via web commands (forward, left, right, stop) with adjustable
+            speed. Connects to WiFi or creates its own hotspot. Uses L298N motor driver and supports OTA updates.
+            Commands sent via HTTP (e.g., ?State=F).</p>
+          <a href="https://github.com/amandaputri26/ESP8266-WiFi-Web-Controlled-Robot-Car" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/ArduinoCar.png" alt="Project 6" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Autonomous Object Retrieval & Fire Suppression Robot</h3>
+          <p class="project-description"> Uses ultrasonic sensors for obstacle avoidance, servo arms to pick objects,
+            and a fan to extinguish fires (detected via flame sensor). PID controls movement speed. Moves forward, stops
+            at obstacles, picks them up, and turns right periodically. Combines motor control, servo actuation, and fire
+            response in one system.</p>
+          <a href="https://github.com/amandaputri26/Autonomous-Object-Retrieval-and-Fire-Suppression-Robot-Car" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/PersonalPortfolio.png" alt="Project 2" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-description">My portfolio website, built with HTML, CSS, and JavaScript, showcases my
+            professional journey, including skills (front-end development, UI/UX design), work experience, and projects
+            (web apps, responsive designs). It features interactive elements like smooth animations, and a project
+            gallery, highlighting my technical expertise and creativity in a clean, modern layout.</p>
+          <a href="https://github.com/amandaputri26/PersonalPortfolio" target="_blank" class="project-button">View on GitHub</a>
+        </div>
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/3DAnimation.png" alt="Project 8" class="project-image">
+        <div class="project-content">
+          <h3 class="project-title">Simple 3D Blender Animation</h3>
+          <p class="project-description">For my final project, I created a fully realized 3D environment in Blender,
+            modeling original characters, props, and textured landscapes. I integrated downloaded animations to bring
+            scenes to life, focusing on lighting, camera work, and fluid motion. The project demonstrates my skills in
+            modeling, rigging, and animation storytelling.</p>
+          <a href="https://drive.google.com/file/d/1LLSD-2ViEF_6XxKIs9DpKflLh-Ttbjsl/view?usp=drive_link"
+            target="_blank" class="project-button">Watch the Video</a>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-text">Made with lots of love by Amanda Putri</p>
+      <div class="footer-socials">
+        <a href="mailto:amandapuuutriii@gmail.com" target="_blank" aria-label="Gmail">
+          <img src="https://img.icons8.com/ios-filled/30/ffffff/new-post.png" alt="Email" />
+        </a>
+        <a href="https://www.linkedin.com/in/amanda-putri-9a226528b/" target="_blank" aria-label="LinkedIn">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/amandaputri26" target="_blank" aria-label="GitHub">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+        </a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Amanda Putri. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/welcome.js"></script>
+  <script src="assets/about.js"></script>
+  <script src="assets/skills.js"></script>
+  <script src="assets/work.js"></script>
+  <script src="assets/project.js"></script>
+  <script src="assets/footer.js"></script>
+</body>
+</html>
